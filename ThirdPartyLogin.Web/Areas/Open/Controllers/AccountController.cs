@@ -52,6 +52,17 @@ namespace ThirdPartyLogin.Web.Areas.Open.Controllers
         }
 
         /// <summary>
+        /// 刷新token
+        /// </summary>
+        /// <returns></returns>
+        [CustomerAuthorizationFilter]
+        [HttpGet]
+        public ActionResult Reflesh()
+        {
+            return Json(Guid.NewGuid(), JsonRequestBehavior.AllowGet);
+        }
+
+        /// <summary>
         /// 需要token验证才能拿到用户信息
         /// </summary>
         /// <returns></returns>
