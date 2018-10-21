@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutVue.cshtml";
+}
+
+<div class="gray-bg" style="width:100%;height:100%;">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name"></h1>
+            </div>
+            <form class="m-t" role="form" action="index.html">
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="用户名" required="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="密码" required="">
+                </div>
+                <button type="submit" class="btn btn-primary block m-b">登 录</button>
+                <div class="form-group">
+                    <a href="/Open/Account/OAuth?appid=appid&redirectUri=http%3a%2f%2flocalhost%3a4553%2fOpen%2fHome%2fIndex%3fcode%3dcode%26state%3dstate"><small>Open平台</small></a> | <a href="login.html#"><small>微信</small></a> | <a href="register.html">微博</a>
+                </div>
+                <p class="text-muted text-center">
+                    <a href="login.html#"><small>忘记密码了？</small></a> | <a href="register.html">注册一个新账号</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                form: {
+                    userName: 'super_admin',
+                    password: ''
+                }
+            },
+            methods: {
+                handleSubmit: function () {
+                    console.log(this);
+                }
+            }
+        })
+    </script>
+}
+
+
+
+

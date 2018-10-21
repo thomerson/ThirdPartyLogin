@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutVue.cshtml";
+}
+
+<div class="gray-bg" style="width:100%;height:100%;">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <div>
+                <h1 class="logo-name"></h1>
+            </div>
+            <form class="m-t" role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="名称" required v-model="model.Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="AppId" required v-model="model.AppId">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Secret" required v-model="model.Secret">
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" class="form-control" placeholder="描述" v-model="model.Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label v-show="model.AppId&&!model.IsPassed"></label>
+                </div>
+                <button v-if="!model.AppId" type="submit" class="btn btn-primary block m-b">申 请</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript">
+        new Vue({
+            el: '#app',
+            data: {
+                model: {
+                    AppId: '',
+                    Secret: '',
+                    Name: '',
+
+                }
+            },
+            methods: {
+                get: function () {
+                    var self = this;
+                }
+            },
+            created: function () {
+                var self = this;
+                self.get();
+            }
+        })
+    </script>
+}
+
+
+
+

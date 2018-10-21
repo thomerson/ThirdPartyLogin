@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPartyLogin.Web", "ThirdPartyLogin.Web\ThirdPartyLogin.Web.csproj", "{569BB8E6-2B14-4052-8E35-A4677B0F4B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdPartyLogin.Model", "ThirdPartyLogin.Model\ThirdPartyLogin.Model.csproj", "{05DDA563-F21B-4388-B8FF-BB1F5FFE0E72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{569BB8E6-2B14-4052-8E35-A4677B0F4B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569BB8E6-2B14-4052-8E35-A4677B0F4B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569BB8E6-2B14-4052-8E35-A4677B0F4B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569BB8E6-2B14-4052-8E35-A4677B0F4B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05DDA563-F21B-4388-B8FF-BB1F5FFE0E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DDA563-F21B-4388-B8FF-BB1F5FFE0E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DDA563-F21B-4388-B8FF-BB1F5FFE0E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DDA563-F21B-4388-B8FF-BB1F5FFE0E72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B39ADC8-5CED-457E-B675-2ECE0AE80FBB}
+	EndGlobalSection
+EndGlobal
